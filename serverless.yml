@@ -40,6 +40,8 @@ functions:
       - http:
           path: test-auth
           method: get
+          authorizer:
+            arn: arn:aws:cognito-idp:us-east-1:248567781489:userpool/us-east-1_5jQpJgMno
           cors: true
           integration: lambda
           response:
